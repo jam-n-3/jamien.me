@@ -6,8 +6,8 @@
     justify-content: center;
     width:100%;
     height: 50vh;
-    background: linear-gradient(45deg,#F17C58,#E94584,#24AADB,#27DBB1);
-    background-size: 600% 100%;
+    background: linear-gradient(45deg,#fc00ff,#00C9FF,#92fe9d);
+    background-size: 300% 100%;
     animation: gradient 10s linear infinite;
     animation-direction: alternate;
 }
@@ -24,12 +24,46 @@
     display: flex;
 }
 
-.card {
+a.card {
+    flex: 1;
+    text-decoration: none;
+    color: black;
     margin: 6vh;
-    padding: 3vh;
-    height: 32vh;
+    height: 38vh;
     background-color: #F0F0F0;
     border-radius: 5%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow : hidden;
+}
+
+.pic {
+    flex: 1;
+    background-color: white;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jpg {
+    height: 14vh;
+}
+
+.info {
+    flex: 1;
+    padding: 1vw;
+}
+
+.cursive {
+    font-family: Brush Script MT, serif;
+    color: purple;
+}
+
+.monospace {
+    font-family: monospace;
+    color: tomato;
 }
