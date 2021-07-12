@@ -2,17 +2,27 @@
 
 #splash {
     display: flex;
-    align-items: center;
     justify-content: center;
+    flex-direction: column;
     width:100%;
     height: 50vh;
     background: linear-gradient(45deg,#fc00ff,#00C9FF,#92fe9d);
-    background-size: 300% 100%;
+    background-size: 600% 100%;
     animation: gradient 10s linear infinite;
     animation-direction: alternate;
 }
+#l_splash {
+    margin-left: 3vw;
+    padding-left: 2vw;
+    border-left: 1vw solid white;
+}
+#l_splash h1 {
+    padding: 1vh 0;
+}
 @keyframes gradient {
     0% {background-position: 0%}
+    20% {background-position: 10%}
+    80% {background-position: 90%;}
     100% {background-position: 100%}
 }
 
